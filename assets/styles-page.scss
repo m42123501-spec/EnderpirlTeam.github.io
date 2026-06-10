@@ -2,14 +2,20 @@
 ---
 
 :root {
-    --text-color: #eee;
-    --text-light: #ccc;
+    --text-color: #e0e0e0;           /* Светлый текст */
+    --text-light: #d580ff;            /* Светлый фиолетовый для ссылок */
     --text-rounded: 0.65rem;
     --text-mb: 1.65rem;
-    --button-bg: #444;
-    --button-bg-light: #555;
+    --button-bg: #4a0080;              /* Тёмный фиолетовый для кнопок */
+    --button-bg-light: #9b30ff;        /* Яркий фиолетовый при наведении */
 }
 
+/* Фон всей страницы */
+body {
+    background-color: #0d0520 !important;  /* Тёмный фон как в лаунчере */
+}
+
+/* Основной контент */
 .layoutpage {
     color: var(--text-color);
     width: 95%;
@@ -17,16 +23,15 @@
     font-size: 1.1rem;
 }
 
-// Fixes for the header and footer
-
+/* Fixes for the header and footer */
 #serverStatus p {
     padding: 0;
 }
 
-// Page stylings
-
-h1,h2,h3 {
+/* Page stylings */
+h1, h2, h3 {
     padding-bottom: 1rem;
+    color: #d580ff;                    /* Заголовки — светлый фиолетовый */
 }
 
 p {
@@ -34,10 +39,10 @@ p {
 }
 
 a {
-    color: var(--text-light);
+    color: #9b30ff;                    /* Ссылки — основной фиолетовый */
     
     &:hover {
-        color: var(--text-color);
+        color: #d580ff;                /* При наведении — светлый фиолетовый */
     }
 }
 
@@ -63,6 +68,7 @@ h3 {
 h4 {
     font-size: 1.5rem;
     padding-top: 1.5rem;
+    color: #d580ff;                    /* Заголовки 4 уровня тоже фиолетовые */
 }
 
 ul {
@@ -90,7 +96,7 @@ ol, ul {
     }
 }
 
-code { /* overridden by pre code */
+code {
     margin-left: 0.25rem;
     margin-right: 0.25rem;
     padding-left: 0.5rem;
@@ -98,8 +104,9 @@ code { /* overridden by pre code */
     padding-top: 0.25rem;
     padding-bottom: 0.25rem;
     font-size: 0.95em;
-    background-color: rgba(0,0,0,0.2);
+    background-color: rgba(155, 48, 255, 0.2);  /* Фиолетовый полупрозрачный фон */
     border-radius: 0.25rem;
+    color: #d580ff;                            /* Светлый фиолетовый текст */
 }
 
 img {
@@ -112,7 +119,7 @@ pre {
     padding-bottom: 1rem;
     padding-left: 2rem;
     padding-right: 2rem;
-    background-color: rgba(0,0,0,0.2);
+    background-color: rgba(155, 48, 255, 0.15); /* Фиолетовый полупрозрачный фон */
     border-radius: var(--text-rounded);
     margin-bottom: var(--text-mb);
     overflow-x: auto;
@@ -122,6 +129,7 @@ pre {
         padding: 0rem;
         background-color: transparent;
         border-radius: 0rem;
+        color: #d580ff;                          /* Светлый фиолетовый */
     }
 }
 
@@ -141,5 +149,23 @@ pre {
 
     &:hover {
         background-color: var(--button-bg-light);
+        box-shadow: 0 0 10px #d580ff;           /* Свечение при наведении */
     }
+}
+
+/* Дополнительные стили для шапки и подвала */
+.site-header {
+    background-color: #1a0a2e !important;
+    border-top-color: #9b30ff !important;
+    border-bottom-color: #9b30ff !important;
+}
+
+.site-footer {
+    background-color: #1a0a2e !important;
+    border-top-color: #9b30ff !important;
+    color: #888888 !important;
+}
+
+.site-title, .site-title:visited {
+    color: #d580ff !important;
 }
