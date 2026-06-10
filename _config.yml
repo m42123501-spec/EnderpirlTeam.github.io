@@ -4,57 +4,16 @@ email: "m4212501@gmail.com"
 url: ""
 baseurl: ""
 github_username: "EnderpirlTeam"
-siteIcon: /media/enderpirl_icon.png
-siteYear: 2026
-siteFooterlink: /about
-showinSearchEngines: true
-googleAnalyticsID: (uncomment to use)
-
-
-Set basic server info
-serverName: EnderpirlMine
-serverDescription: §5§lEnderpirlMine §8| §dГриф, кланы, экономика§r\n§7Добро пожаловать в Эндер-мир\!
-serverIP: Сервер в разработке!!!
-useBedrockForOnlineStatus: false
-
-
-Discord information
-discordInvite: 
-discordServerID: 
-discordChannelID: 
-
-
-# # Navbar Links at the top of the page (uncomment "siteNav" to use)
-# #  name - The title on the navbar
-#  # url - The link it should go to (for example, if you have "maps.md" file, put "maps")
-#  # newtab - Whether link should open in new tab
-# 
-
-
- siteNav:
-   - name: Главная
-     url: /
-     newtab: true
-   - name: О проекте
-     url: 
-   - name: 
-     url: 
-
-
-# Don't change anything below here, these are defaults set by GitHub Pages:
-# ======
 theme: minima
-# plugins:
-#   - jekyll-feed
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
 
+# Настройки навигации (раскомментируйте, если нужны кнопки в меню)
+# header_pages:
+#   - about.md
+
+# Настройки соцсетей (раскомментируйте, если нужно)
+# github_username: EnderpirlTeam
+# twitter_username: ваш_логин
+
+# Настройки сервера (опционально, для виджетов)
+# server_ip: play.enderpirl.ru
+# server_name: EnderpirlMine
