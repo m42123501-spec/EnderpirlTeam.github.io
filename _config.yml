@@ -36,19 +36,14 @@ discordChannelID:
      url: /
      newtab: true
    - name: О проекте
-     url: /about
-   - name: Скачать
-     url: /download
+     url: 
+   - name: 
+     url: 
 
 
 # Don't change anything below here, these are defaults set by GitHub Pages:
 # ======
-theme_color:
-  main: "#9b30ff"      # Основной цвет — ваш фирменный фиолетовый
-  text: "#e0e0e0"      # Цвет текста — светлый, как в лаунчере
-  link: "#d580ff"      # Цвет ссылок — более светлый фиолетовый
-  link_hover: "#9b30ff" # Цвет ссылки при наведении — ваш основной
-  bg: "#0d0520"        # Цвет фона — тёмно-фиолетовый, как у вас
+theme: minima
 # plugins:
 #   - jekyll-feed
 # exclude:
