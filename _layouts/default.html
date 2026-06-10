@@ -3,7 +3,7 @@ layout: compress
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,13 +19,13 @@ layout: compress
         <meta name="robots" content="noindex">
     {% endif %}
 
-    <!-- css and fonts -->
-    <link href="{{ site.baseurl }}/assets/styles.css" rel="stylesheet">
+    <!-- css and fonts - ПОДКЛЮЧАЕМ ВАШИ ФИОЛЕТОВЫЕ СТИЛИ -->
+    <link href="{{ site.baseurl }}/assets/styles_page.scss" rel="stylesheet">
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&display=swap" rel="stylesheet">
 
-    <!-- set chrome and embed site color -->
-    <meta name="theme-color" content="#272727">
+    <!-- set chrome and embed site color - ФИОЛЕТОВЫЙ ТЕМА -->
+    <meta name="theme-color" content="#0d0520">
 
     <!-- social media -->
     <meta property="og:title" content="{{ site.serverName }} - Minecraft Server">
@@ -33,14 +33,58 @@ layout: compress
     <meta property="og:image" content="{{ site.baseurl }}{{ site.siteIcon }}">
     <meta property="og:url" content="{{ site.url }}{{ site.baseurl }}">
 
+    <!-- ДОПОЛНИТЕЛЬНЫЕ СТИЛИ ДЛЯ ЦВЕТОВОЙ СХЕМЫ ЭНДЕР-МИРА -->
+    <style>
+        body {
+            background-color: #0d0520 !important;
+            color: #e0e0e0 !important;
+        }
+        h1, h2, h3, h4, .site-title, #serverLogoName {
+            color: #d580ff !important;
+        }
+        a {
+            color: #9b30ff !important;
+            transition: color 0.3s ease !important;
+        }
+        a:hover {
+            color: #d580ff !important;
+        }
+        .button, .btn, button {
+            background-color: #4a0080 !important;
+            border-color: #9b30ff !important;
+            color: white !important;
+        }
+        .button:hover, .btn:hover, button:hover {
+            background-color: #9b30ff !important;
+            box-shadow: 0 0 10px #d580ff !important;
+        }
+        .layoutfooter {
+            color: #888888 !important;
+        }
+        .layoutfooter a {
+            color: #9b30ff !important;
+        }
+        .layoutfooter a:hover {
+            color: #d580ff !important;
+        }
+        nav {
+            background-color: #1a0a2e !important;
+        }
+        .text-teal-200 {
+            color: #9b30ff !important;
+        }
+        .hover\:text-white:hover {
+            color: #d580ff !important;
+        }
+    </style>
 </head>
-<body style="min-height:100vh;">
+<body style="min-height:100vh; background-color: #0d0520;">
     <!-- navbar -->
-    <nav class="flex items-center justify-between flex-wrap bg-transparent p-6">
+    <nav class="flex items-center justify-between flex-wrap p-6" style="background-color: #1a0a2e;">
         <a href="{{ site.baseurl }}/">
-            <div class="flex items-center flex-shrink-0 text-white mr-6 select-none">
+            <div class="flex items-center flex-shrink-0 mr-6 select-none">
                 <img src="{{ site.baseurl }}{{ site.siteIcon }}" class="mr-4 rounded shadow" width="30px" alt="{{ site.serverName }}">
-                <span class="font-semibold text-xl tracking-tight hidden md:block" id="serverLogoName">{{ site.serverName }}</span>
+                <span class="font-semibold text-xl tracking-tight hidden md:block" id="serverLogoName" style="color: #d580ff;">{{ site.serverName }}</span>
                 {% if site.siteNav %}
                     <div class="text-transparent select-none px-0 md:px-4 pb-1">
                         <div id="serverInd">&#11044;</div>
@@ -53,11 +97,11 @@ layout: compress
             {% if site.siteNav %}
                 <div class="text-base flex-grow text-right pb-1 lg:pb-0">
                     <!-- Home link only on lg -->
-                    <a href="{{ site.baseurl }}/" rel="noopener" class="hidden lg:block lg:inline-block {% if page.navname == "Home" %}text-white{% else %}text-teal-200 hover:text-white{% endif %} mr-4">
+                    <a href="{{ site.baseurl }}/" rel="noopener" class="hidden lg:block lg:inline-block {% if page.navname == "Home" %}text-white{% else %}text-teal-200 hover:text-white{% endif %} mr-4" style="color: #9b30ff;">
                         Home
                     </a>
                     {% for nlink in site.siteNav %}
-                        <a href="{{ site.baseurl }}/{{ nlink.url }}" rel="noopener" {% if nlink.newtab == true %}target="_blank" {% endif %}class="block inline-block {% if page.navname == nlink.name %}text-white{% else %}text-teal-200 hover:text-white{% endif %} mr-4">
+                        <a href="{{ site.baseurl }}/{{ nlink.url }}" rel="noopener" {% if nlink.newtab == true %}target="_blank" {% endif %}class="block inline-block {% if page.navname == nlink.name %}text-white{% else %}text-teal-200 hover:text-white{% endif %} mr-4" style="color: #9b30ff;">
                             {{ nlink.name }}
                         </a>
                     {% endfor %}
@@ -88,9 +132,9 @@ layout: compress
 
     {{ content }}
 
-    <div class="layoutfooter w-full pb-8 text-center transition duration-200">
-        <a href="https://github.com/coffeebank/moonrise" rel="noopener" title="Moonrise by coffeebank" class="hover:text-gray-400">Powered by Moonrise</a> &middot; 
-        <a href="{% if site.siteFooterlink %}{{ site.baseurl }}{{ site.siteFooterlink }}{% else %}{{ site.baseurl }}/about{% endif %}" rel="noopener" title="Legal" class="hover:text-gray-400">&copy; {{ site.siteYear }}<script>new Date().getFullYear()>{{ site.siteYear }}&&document.write("&#8208;"+new Date().getFullYear());</script> {{ site.serverName }} &middot; About/Contact</a>
+    <!-- НОВЫЙ ПОДВАЛ - БЕЗ ЛИШНИХ КНОПОК, В СТИЛЕ ЭНДЕР-МИРА -->
+    <div class="layoutfooter w-full pb-8 text-center transition duration-200" style="color: #888888;">
+        © {{ site.time | date: '%Y' }} Enderpirl Team. Все права защищены.
     </div>
 
     {% if page.navname == "Home" %}
