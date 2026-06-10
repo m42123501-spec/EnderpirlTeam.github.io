@@ -8,35 +8,35 @@ siteIcon: /media/enderpirl_icon.png
 siteYear: 2026
 siteFooterlink: /about
 showinSearchEngines: true
-# googleAnalyticsID: (uncomment to use)
+googleAnalyticsID: (uncomment to use)
 
 
-# Set basic server info
+Set basic server info
 serverName: EnderpirlMine
 serverDescription: §5§lEnderpirlMine §8| §dГриф, кланы, экономика§r\n§7Добро пожаловать в Эндер-мир\!
 serverIP: Сервер в разработке!!!
 useBedrockForOnlineStatus: false
 
 
-# Discord information
-discordInvite: https://discord.gg/minecraft
-discordServerID: 299881420891881473
-discordChannelID: 450428756855750666
+Discord information
+discordInvite: 
+discordServerID: 
+discordChannelID: 
 
 
 # # Navbar Links at the top of the page (uncomment "siteNav" to use)
-# #   name - The title on the navbar
-# #   url - The link it should go to (for example, if you have "maps.md" file, put "maps")
-# #   newtab - Whether link should open in new tab
+# #  name - The title on the navbar
+#  # url - The link it should go to (for example, if you have "maps.md" file, put "maps")
+#  # newtab - Whether link should open in new tab
 # 
-# siteNav:
-#   - name: Server Map
-#     url: map
-#     newtab: true
-#   - name: Screenshots
-#     url: screenshots
-#   - name: About
-#     url: about
+ siteNav:
+   - name: Главная
+     url: /
+     newtab: true
+   - name: О проекте
+     url: /about
+   - name: Скачать
+     url: /download
 
 
 # Don't change anything below here, these are defaults set by GitHub Pages:
@@ -55,3 +55,4 @@ theme: minima
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
