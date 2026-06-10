@@ -1,171 +1,39 @@
 ---
 ---
+/* -----------------------------------------
+   ENDERPIRL THEME - CUSTOM STYLES
+----------------------------------------- */
 
-:root {
-    --text-color: #e0e0e0;           /* Светлый текст */
-    --text-light: #d580ff;            /* Светлый фиолетовый для ссылок */
-    --text-rounded: 0.65rem;
-    --text-mb: 1.65rem;
-    --button-bg: #4a0080;              /* Тёмный фиолетовый для кнопок */
-    --button-bg-light: #9b30ff;        /* Яркий фиолетовый при наведении */
-}
-
-/* Фон всей страницы */
 body {
-    background-color: #0d0520 !important;  /* Тёмный фон как в лаунчере */
+    background-color: #0d0520 !important;
+    color: #e0e0e0 !important;
 }
 
-/* Основной контент */
-.layoutpage {
-    color: var(--text-color);
-    width: 95%;
-    max-width: 950px;
-    font-size: 1.1rem;
-}
-
-/* Fixes for the header and footer */
-#serverStatus p {
-    padding: 0;
-}
-
-/* Page stylings */
-h1, h2, h3 {
-    padding-bottom: 1rem;
-    color: #d580ff;                    /* Заголовки — светлый фиолетовый */
-}
-
-p {
-    padding-bottom: 1rem;
+h1, h2, h3, h4, .site-title {
+    color: #d580ff !important;
 }
 
 a {
-    color: #9b30ff;                    /* Ссылки — основной фиолетовый */
-    
-    &:hover {
-        color: #d580ff;                /* При наведении — светлый фиолетовый */
-    }
+    color: #9b30ff !important;
 }
 
-h1 {
-    font-size: 2.5rem;
-    line-height: 3.5rem;
-    padding-top: 2.5rem;
-    font-weight: bold;
+a:hover {
+    color: #d580ff !important;
 }
 
-h2 {
-    font-size: 2rem;
-    padding-top: 1.5rem;
-    font-weight: bold;
-}
-
-h3 {
-    font-size: 1.65rem;
-    padding-top: 1.5rem;
-    font-weight: bold;
-}
-
-h4 {
-    font-size: 1.5rem;
-    padding-top: 1.5rem;
-    color: #d580ff;                    /* Заголовки 4 уровня тоже фиолетовые */
-}
-
-ul {
-    list-style-type: disc;
-}
-
-ol {
-    list-style-type: decimal;
-}
-
-ol, ul {
-    margin: 0;
-    padding: 1rem 2.5rem;
-    list-style-position: outside;
-
-    li {
-        padding-bottom: 0.5rem;
-    }
-
-    ol, ul {
-        padding-top: 0.5rem;
-        padding-bottom: 0px;
-        padding-left: 2.5rem;
-        padding-right: 2.5rem;
-    }
-}
-
-code {
-    margin-left: 0.25rem;
-    margin-right: 0.25rem;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    padding-top: 0.25rem;
-    padding-bottom: 0.25rem;
-    font-size: 0.95em;
-    background-color: rgba(155, 48, 255, 0.2);  /* Фиолетовый полупрозрачный фон */
-    border-radius: 0.25rem;
-    color: #d580ff;                            /* Светлый фиолетовый текст */
-}
-
-img {
-    border-radius: var(--text-rounded);
-}
-
-pre {
-    width: 100%;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    background-color: rgba(155, 48, 255, 0.15); /* Фиолетовый полупрозрачный фон */
-    border-radius: var(--text-rounded);
-    margin-bottom: var(--text-mb);
-    overflow-x: auto;
-
-    code {
-        margin: 0rem;
-        padding: 0rem;
-        background-color: transparent;
-        border-radius: 0rem;
-        color: #d580ff;                          /* Светлый фиолетовый */
-    }
-}
-
-.button {
-    background-color: var(--button-bg);
-    color: var(--text-color);
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
-    border-radius: 0.25rem;
-    transition: background-color 0.2s ease !important;
-    font-size: 1rem;
-    white-space: nowrap;
-    line-height: 3rem;
-    user-select: none;
-
-    &:hover {
-        background-color: var(--button-bg-light);
-        box-shadow: 0 0 10px #d580ff;           /* Свечение при наведении */
-    }
-}
-
-/* Дополнительные стили для шапки и подвала */
-.site-header {
+.site-header, .site-footer {
     background-color: #1a0a2e !important;
     border-top-color: #9b30ff !important;
     border-bottom-color: #9b30ff !important;
 }
 
-.site-footer {
-    background-color: #1a0a2e !important;
-    border-top-color: #9b30ff !important;
-    color: #888888 !important;
+.button, .btn, button {
+    background-color: #4a0080 !important;
+    border-color: #9b30ff !important;
+    color: white !important;
 }
 
-.site-title, .site-title:visited {
-    color: #d580ff !important;
+.button:hover, .btn:hover, button:hover {
+    background-color: #9b30ff !important;
+    box-shadow: 0 0 10px #d580ff !important;
 }
