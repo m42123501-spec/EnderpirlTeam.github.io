@@ -10,7 +10,7 @@ navname: Главная
 Самый стильный лаунчер для Minecraft с поддержкой всех версий и модов.
 
 <div style="text-align: center; margin: 30px 0;">
-<a href="https://drive.google.com/file/d/1IC9YEmla6eZTJuP21fUpJhzVmT-6sIwd/view?usp=sharing" class="download-btn">⬇️ Скачать Enderpirl Launcher</a>
+<a href="https://drive.google.com/file/d/1IC9YEmla6eZTJuP21fUpJhzVmT-6sIwd/view?usp=sharing" style="background-color: #9b30ff; color: white; padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 18px; font-weight: bold; border-radius: 8px; border: 2px solid #d580ff; cursor: pointer; transition: all 0.3s ease;" onmouseover="this.style.backgroundColor='#4a0080'; this.style.borderColor='#9b30ff';" onmouseout="this.style.backgroundColor='#9b30ff'; this.style.borderColor='#d580ff';">⬇️ Скачать Enderpirl Launcher</a>
        style="background-color: #9b30ff; color: white; padding: 15px 32px; 
               text-align: center; text-decoration: none; display: inline-block;
               font-size: 18px; font-weight: bold; border-radius: 8px;
