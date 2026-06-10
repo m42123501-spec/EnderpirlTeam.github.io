@@ -1,24 +1,18 @@
 ---
 layout: page
-title: О проекте EnderPirl Launcher — стильный лаунчер в мире Эндера
-navname: О проекте
+title: О проекте
 ---
 
-# {{ site.serverName }}
+## О нас
 
-Moonrise is a simple, flexible template website for Minecraft servers.
+Привет! Я создал Enderpirl Launcher, потому что хотел сделать удобный и красивый лаунчер для Minecraft.
 
-[GitHub](https://github.com/coffeebank/moonrise)
+## Почему стоит выбрать наш лаунчер
 
+- **Бесплатно** — никаких платных подписок
+- **Безопасно** — открытый исходный код
+- **Удобно** — автоматическая установка модов и Java
 
-# Terms of Use
+## Контакты
 
-Moonrise MC is free for use [under the MIT license](https://github.com/coffeebank/moonrise).
-
-
-# Privacy Policy
-
-This website does not collect any data, but third party integrations may collect data to provide a service.
-
-- Mcsrvstat.us: Displays Minecraft server status
-- Widgetbot: Displays Discord server preview
+По всем вопросам: m4212501@gmail.com
