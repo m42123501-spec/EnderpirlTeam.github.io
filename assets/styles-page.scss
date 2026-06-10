@@ -56,3 +56,52 @@ a:hover {
     box-shadow: 0 0 15px #d580ff !important;
     transform: scale(1.02) !important;
 }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    background-color: #1a0a2e;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+th, td {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid #9b30ff;
+}
+
+th {
+    background-color: #4a0080;
+    color: #d580ff;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+td {
+    color: #e0e0e0;
+}
+
+tr:hover td {
+    background-color: rgba(155, 48, 255, 0.15);
+}
+
+/* Первая строка таблицы (шапка) */
+tr:first-child th {
+    border-top: none;
+}
+
+/* Последняя строка не имеет нижней границы */
+tr:last-child td {
+    border-bottom: none;
+}
+
+/* Адаптация для мобильных устройств */
+@media (max-width: 640px) {
+    th, td {
+        padding: 0.5rem;
+        font-size: 0.85rem;
+    }
+}
