@@ -1,0 +1,63 @@
+---
+---
+
+/* --------------------------------------------
+   ENDERPIRL CUSTOM THEME COLORS FOR MINIMA
+-------------------------------------------- */
+
+/* Цветовая схема из вашего лаунчера */
+:root {
+    --ender-bg-dark: #0d0520;
+    --ender-bg-light: #1a0a2e;
+    --ender-primary: #9b30ff;
+    --ender-secondary: #d580ff;
+    --ender-text: #e0e0e0;
+    --ender-accent-dark: #4a0080;
+}
+
+/* Применяем наши цвета к элементам темы Minima */
+
+/* Основной фон страницы и цвет текста */
+body {
+    background-color: var(--ender-bg-dark) !important;
+    color: var(--ender-text) !important;
+}
+
+/* Заголовки (h1, h2, h3) */
+h1, h2, h3, h4, .site-title {
+    color: var(--ender-secondary) !important;
+}
+
+/* Ссылки */
+a {
+    color: var(--ender-primary) !important;
+}
+
+a:hover {
+    color: var(--ender-secondary) !important;
+    text-decoration: underline !important;
+}
+
+/* Шапка сайта (site-header) */
+.site-header {
+    border-top-color: var(--ender-primary) !important;
+    border-bottom-color: var(--ender-primary) !important;
+    background-color: var(--ender-bg-light) !important;
+}
+
+/* Подвал сайта (site-footer) */
+.site-footer {
+    border-top-color: var(--ender-primary) !important;
+    background-color: var(--ender-bg-light) !important;
+}
+
+/* Боковая панель (если используется) */
+.sidebar, .card {
+    background-color: var(--ender-bg-light) !important;
+    border-color: var(--ender-primary) !important;
+}
+
+/* Посты и другой контент */
+.post-content, .wrapper {
+    background-color: var(--ender-bg-dark) !important;
+}
