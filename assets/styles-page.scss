@@ -38,36 +38,23 @@ a:hover {
     box-shadow: 0 0 10px #d580ff !important;
 }
 
-/* Белая кнопка скачивания - МАКСИМАЛЬНЫЙ ПРИОРИТЕТ */
+/* ПЕРЕОПРЕДЕЛЕНИЕ ДЛЯ КНОПКИ СКАЧИВАНИЯ - ТЕКСТ ВСЕГДА ВИДИМ */
+a[href*="drive.google.com"],
+a[href*="google.com"],
 .download-btn,
-a.download-btn,
-.download-btn:link,
-.download-btn:visited,
-.download-btn:hover,
-.download-btn:active,
-.download-btn:focus {
-    background-color: #ffffff !important;
-    color: #0d0520 !important;
-    border: 2px solid #9b30ff !important;
-    border-radius: 0.5rem !important;
-    padding: 12px 24px !important;
-    font-size: 1.2rem !important;
-    font-weight: bold !important;
-    text-decoration: none !important;
-    display: inline-block !important;
-    transition: all 0.3s ease !important;
+a.download-btn {
+    color: #ffffff !important;
     opacity: 1 !important;
     visibility: visible !important;
     text-shadow: none !important;
+    -webkit-text-fill-color: #ffffff !important;
 }
 
-/* При наведении - меняется только фон и цвет текста */
+a[href*="drive.google.com"]:hover,
+a[href*="google.com"]:hover,
+.download-btn:hover,
 a.download-btn:hover {
-    background-color: #9b30ff !important;
     color: #ffffff !important;
-    box-shadow: 0 0 15px #d580ff !important;
-    transform: scale(1.02) !important;
-    text-decoration: none !important;
     opacity: 1 !important;
     visibility: visible !important;
 }
