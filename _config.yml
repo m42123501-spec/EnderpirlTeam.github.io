@@ -1,11 +1,9 @@
-# Set this website's info
-# Change "coffeebank" to your GitHub username
-# Change "moonrise" to your repository name
 title: "Enderpirl Launcher"
-email: "m4212501@gmail.com
+description: "Стильный и мощный лаунчер для Minecraft."
+email: "m4212501@gmail.com"
 url: ""
 baseurl: ""
-github_username:  "EnderpirlTeam"
+github_username: "EnderpirlTeam"
 siteIcon: /media/enderpirl_icon.png
 siteYear: 2026
 siteFooterlink: /about
