@@ -1,11 +1,10 @@
 ---
 layout: page
-title: Скачать Enderpirl Launcher
+title: Скачать EnderPirl Launcher
 navname: Скачать
-permalink: /download/
 ---
 
-# Скачать Enderpirl Launcher
+# ⬇️ Скачать EnderPirl Launcher
 
 <div style="text-align: center; margin: 30px 0;">
     <a href="https://drive.google.com/file/d/1IC9YEmla6eZTJuP21fUpJhzVmT-6sIwd/view?usp=sharing" 
@@ -15,24 +14,60 @@ permalink: /download/
               text-align: center; 
               text-decoration: none; 
               display: inline-block; 
-              font-size: 18px; 
+              font-size: 20px; 
               font-weight: bold; 
               border-radius: 8px; 
               border: none; 
-              cursor: pointer;">
-        ⬇️ Скачать Enderpirl Launcher
+              cursor: pointer;
+              transition: all 0.3s ease;">
+        ⬇️ СКАЧАТЬ ENDERPIRL LAUNCHER
     </a>
-    <p style="color: #888; font-size: 12px;">Размер файла: ~50 МБ</p>
+    <p style="color: #888; font-size: 12px; margin-top: 10px;">Размер файла: ~50 МБ | Версия: 1.0.0</p>
 </div>
 
-## Инструкция по установке
+---
 
-1. Скачайте файл
-2. Запустите установщик
-3. Следуйте инструкциям на экране
-4. После установки запустите лаунчер через ярлык на рабочем столе
+## 📦 Инструкция по установке
 
-## Примечание
+<div style="background-color: #1a0a2e; padding: 15px; border-radius: 8px; margin: 20px 0;">
+    <ol style="margin: 0; padding-left: 20px;">
+        <li>Скачайте установщик <strong>EnderPirl Launcher</strong></li>
+        <li>Запустите <code>EnderPirlLauncher_Setup.exe</code></li>
+        <li>Следуйте инструкциям установщика</li>
+        <li>После установки запустите лаунчер через ярлык на рабочем столе</li>
+        <li>Выберите аккаунт (или создайте новый) и наслаждайтесь игрой!</li>
+    </ol>
+</div>
 
-Если ссылка не работает, скопируйте её вручную:  
-`https://drive.google.com/file/d/1IC9YEmla6eZTJuP21fUpJhzVmT-6sIwd/view?usp=sharing`
+---
+
+## 🔧 Системные требования
+
+| | |
+|---|---|
+| **ОС** | Windows 7 / 8 / 10 / 11 |
+| **ОЗУ** | от 1 ГБ (рекомендуется 3-4 ГБ) |
+| **Место** | 200 МБ для лаунчера |
+| **Java** | Java 8 (установится автоматически) |
+
+---
+
+## 🆘 Помощь
+
+Если у вас возникли проблемы с установкой или запуском:
+
+1. Проверьте, что установлена Java 8 или выше
+2. Запустите лаунчер от имени администратора
+3. Добавьте папку с лаунчером в исключения антивируса
+4. Свяжитесь с нами: **m4212501@gmail.com**
+
+---
+
+## 📜 История версий
+
+### Версия 1.0.0 (2026)
+- Первый релиз лаунчера
+- Поддержка всех версий Minecraft
+- Встроенная установка Forge и Fabric
+- Стильный дизайн в тематике Эндер-мира
+- Система аккаунтов (офлайн и с паролем)
