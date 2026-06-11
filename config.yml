@@ -6,14 +6,7 @@ baseurl: ""
 github_username: "EnderpirlTeam"
 theme: minima
 
-# ===== НАСТРОЙКИ МЕНЮ =====
+# Настройки меню (для темы minima)
 header_pages:
   - index.md
   - download.md
-
-# ===== НАСТРОЙКИ НАВИГАЦИИ =====
-header_pages:
-  - name: Главная
-    url: /
-  - name: Скачать
-    url: /download
