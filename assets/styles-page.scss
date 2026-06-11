@@ -1,60 +1,51 @@
----
----
-/* -----------------------------------------
-   ENDERPIRL THEME - CUSTOM STYLES
------------------------------------------ */
-
-body {
-    background-color: #0d0520 !important;
-    color: #e0e0e0 !important;
-}
-
-h1, h2, h3, h4, .site-title {
+/* Стили для кнопок навигации */
+.site-nav .page-link {
     color: #d580ff !important;
+    font-weight: bold !important;
 }
 
-a {
+.site-nav .page-link:hover {
     color: #9b30ff !important;
+    text-decoration: underline !important;
 }
 
-a:hover {
-    color: #d580ff !important;
+/* Стили для таблиц */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+    background-color: #1a0a2e;
+    border-radius: 8px;
+    overflow: hidden;
 }
 
-.site-header, .site-footer {
-    background-color: #1a0a2e !important;
-    border-top-color: #9b30ff !important;
-    border-bottom-color: #9b30ff !important;
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #9b30ff;
 }
 
-.button, .btn, button {
-    background-color: #4a0080 !important;
-    border-color: #9b30ff !important;
-    color: white !important;
+th {
+    background-color: #4a0080;
+    color: #d580ff;
 }
 
-.button:hover, .btn:hover, button:hover {
-    background-color: #9b30ff !important;
-    box-shadow: 0 0 10px #d580ff !important;
+td {
+    color: #e0e0e0;
 }
 
-/* ПЕРЕОПРЕДЕЛЕНИЕ ДЛЯ КНОПКИ СКАЧИВАНИЯ - ТЕКСТ ВСЕГДА ВИДИМ */
-a[href*="drive.google.com"],
-a[href*="google.com"],
-.download-btn,
-a.download-btn {
-    color: #ffffff !important;
-    opacity: 1 !important;
-    visibility: visible !important;
-    text-shadow: none !important;
-    -webkit-text-fill-color: #ffffff !important;
+tr:hover td {
+    background-color: rgba(155, 48, 255, 0.1);
 }
 
-a[href*="drive.google.com"]:hover,
-a[href*="google.com"]:hover,
-.download-btn:hover,
-a.download-btn:hover {
-    color: #ffffff !important;
-    opacity: 1 !important;
-    visibility: visible !important;
+/* Стили для списков */
+ol, ul {
+    color: #e0e0e0;
+}
+
+code {
+    background-color: #2d1b4e;
+    padding: 2px 5px;
+    border-radius: 4px;
+    color: #d580ff;
 }
