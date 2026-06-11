@@ -1,4 +1,4 @@
-title: "Enderpirl Launcher"
+title: "EnderPirl Launcher"
 description: "Стильный и мощный лаунчер для Minecraft."
 email: "m4212501@gmail.com"
 url: ""
@@ -6,14 +6,14 @@ baseurl: ""
 github_username: "EnderpirlTeam"
 theme: minima
 
-# Настройки навигации (раскомментируйте, если нужны кнопки в меню)
-# header_pages:
-#   - about.md
+# ===== НАСТРОЙКИ МЕНЮ =====
+header_pages:
+  - index.md
+  - download.md
 
-# Настройки соцсетей (раскомментируйте, если нужно)
-# github_username: EnderpirlTeam
-# twitter_username: ваш_логин
-
-# Настройки сервера (опционально, для виджетов)
-# server_ip: play.enderpirl.ru
-# server_name: EnderpirlMine
+# ===== НАСТРОЙКИ НАВИГАЦИИ =====
+header_pages:
+  - name: Главная
+    url: /
+  - name: Скачать
+    url: /download
